@@ -1,0 +1,114 @@
+{
+  "name": "docki-explorer",
+  "displayName": "Docki Explorer",
+  "description": "Docki Explorer — browse, search, and read local /knowledge architecture docs (Mermaid, evidence links)",
+  "version": "0.2.1",
+  "publisher": "docki",
+  "categories": ["Other"],
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "activationEvents": [
+    "onView:dockiExplorer.knowledgeTree",
+    "onCommand:dockiExplorer.open",
+    "onCommand:dockiExplorer.refresh",
+    "onCommand:dockiExplorer.search",
+    "onCommand:dockiExplorer.openAiContext",
+    "onCommand:dockiExplorer.openReadme"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "dockiExplorer.open",
+        "title": "Docki Explorer: Open",
+        "category": "Docki Explorer"
+      },
+      {
+        "command": "dockiExplorer.refresh",
+        "title": "Docki Explorer: Refresh",
+        "category": "Docki Explorer"
+      },
+      {
+        "command": "dockiExplorer.search",
+        "title": "Docki Explorer: Search",
+        "category": "Docki Explorer"
+      },
+      {
+        "command": "dockiExplorer.openAiContext",
+        "title": "Docki Explorer: Open AI Context",
+        "category": "Docki Explorer"
+      },
+      {
+        "command": "dockiExplorer.openReadme",
+        "title": "Docki Explorer: Open Knowledge README",
+        "category": "Docki Explorer"
+      },
+      {
+        "command": "dockiExplorer.openRaw",
+        "title": "Docki Explorer: Open Raw Markdown",
+        "category": "Docki Explorer"
+      },
+      {
+        "command": "dockiExplorer.reload",
+        "title": "Docki Explorer: Reload",
+        "category": "Docki Explorer"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "dockiExplorer.search",
+          "when": "view == dockiExplorer.knowledgeTree",
+          "group": "navigation@1",
+          "icon": "$(search)"
+        }
+      ]
+    },
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "dockiExplorer",
+          "title": "Docki",
+          "icon": "media/architecture.svg"
+        }
+      ]
+    },
+    "views": {
+      "dockiExplorer": [
+        {
+          "id": "dockiExplorer.knowledgeTree",
+          "name": "Explorer",
+          "when": "workspaceFolderCount > 0"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "compile": "node esbuild.config.mjs",
+    "watch": "node esbuild.config.mjs --watch",
+    "test": "npm run compile && mocha --require ts-node/register --require ./test/setup.ts --extensions ts \"test/unit/**/*.test.ts\"",
+    "test:integration": "npm run compile && npx ts-node test/integration/runTest.ts",
+    "package": "npm run compile && vsce package --no-dependencies",
+    "vscode:prepublish": "npm run compile"
+  },
+  "dependencies": {
+    "fuse.js": "^7.0.0",
+    "markdown-it": "^14.1.0",
+    "markdown-it-anchor": "^9.0.1",
+    "mermaid": "^11.4.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.20",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^20.17.0",
+    "@types/vscode": "^1.85.0",
+    "@vscode/test-electron": "^2.4.1",
+    "@vscode/vsce": "^3.2.1",
+    "chai": "^4.5.0",
+    "esbuild": "^0.24.0",
+    "mocha": "^10.8.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}

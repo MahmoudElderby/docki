@@ -1,0 +1,112 @@
+body {
+  font-family: var(--vscode-font-family);
+  font-size: var(--vscode-font-size);
+  color: var(--vscode-foreground);
+  background: var(--vscode-editor-background);
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.content {
+  padding: 1rem 1.5rem 2rem;
+  max-width: 900px;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--vscode-inputValidation-warningBackground);
+  border-bottom: 1px solid var(--vscode-inputValidation-warningBorder);
+}
+
+.banner.hidden {
+  display: none;
+}
+
+.banner button {
+  background: var(--vscode-button-background);
+  color: var(--vscode-button-foreground);
+  border: none;
+  padding: 0.25rem 0.75rem;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--vscode-foreground);
+  border-bottom: 1px solid var(--vscode-panel-border);
+  padding-bottom: 0.25rem;
+}
+
+a {
+  color: var(--vscode-textLink-foreground);
+}
+
+code {
+  background: var(--vscode-textCodeBlock-background);
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}
+
+pre {
+  background: var(--vscode-textCodeBlock-background);
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid var(--vscode-panel-border);
+  padding: 0.5rem;
+}
+
+.evidence-link {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--vscode-textLink-foreground);
+}
+
+.mermaid-placeholder {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.mermaid-error {
+  border: 1px solid var(--vscode-inputValidation-errorBorder);
+  background: var(--vscode-inputValidation-errorBackground);
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.mermaid-error-message {
+  margin: 0 0 0.75rem;
+  font-weight: 600;
+  color: var(--vscode-errorForeground);
+}
+
+.mermaid-error-source {
+  white-space: pre-wrap;
+  word-break: break-word;
+  margin: 0;
+}
+
+.mermaid-error pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.document-missing {
+  padding: 2rem;
+  text-align: center;
+  color: var(--vscode-descriptionForeground);
+}
+
+body.vscode-high-contrast {
+  outline: 1px solid var(--vscode-contrastBorder);
+}

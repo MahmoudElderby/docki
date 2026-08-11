@@ -1,0 +1,46 @@
+{
+  "name": "docki",
+  "version": "0.1.0",
+  "description": "Docki — architecture knowledge for Cursor and VS Code. Analyze any repo into a persistent /knowledge base, then explore it.",
+  "license": "MIT",
+  "bin": {
+    "docki": "./packages/cli/bin/docki.js"
+  },
+  "files": [
+    "packages/cli/bin",
+    "packages/cli/src",
+    "kit",
+    "docs",
+    "templates",
+    "README.md",
+    "LICENSE",
+    "AGENTS.md",
+    "MODEL-RECOMMENDATIONS.md"
+  ],
+  "scripts": {
+    "docki": "node packages/cli/bin/docki.js",
+    "test:cli": "node packages/cli/bin/docki.js --help",
+    "explorer:compile": "npm --prefix packages/explorer run compile",
+    "explorer:package": "npm --prefix packages/explorer run package",
+    "explorer:test": "npm --prefix packages/explorer test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "architecture",
+    "knowledge-base",
+    "cursor",
+    "vscode",
+    "documentation",
+    "docki"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MahmoudElderby/docki.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MahmoudElderby/docki/issues"
+  },
+  "homepage": "https://github.com/MahmoudElderby/docki#readme"
+}

@@ -1,0 +1,31 @@
+---
+description: Use the repository architecture knowledge base when planning or making cross-cutting changes.
+alwaysApply: true
+---
+
+# Docki Knowledge Usage
+
+The repository's persistent architecture knowledge lives under `/knowledge`.
+
+## Before architecture-sensitive work
+
+For changes involving multiple components/services, APIs, contracts, events, databases, integrations, infrastructure, authentication/security, deployment, or important business flows:
+
+1. Read `/knowledge/AI_CONTEXT.md` if it exists.
+2. Read the relevant files linked from `/knowledge/README.md`.
+3. Respect documented system boundaries and constraints.
+4. Treat current source code/configuration as authoritative if documentation conflicts with code.
+5. If material architecture changes are introduced, invoke or recommend the `docki-update` skill before the task is considered complete.
+
+## Knowledge reliability
+
+Generated knowledge uses these classifications:
+
+- DECLARED — explicitly documented/configured.
+- OBSERVED — directly evidenced in the repository.
+- INFERRED — supported by evidence but not explicit.
+- UNKNOWN — not determinable from the repository.
+
+Do not silently promote INFERRED or UNKNOWN information to fact.
+
+Do not load the entire `/knowledge` tree unnecessarily. Start with `AI_CONTEXT.md`, then retrieve only relevant deeper documents.
