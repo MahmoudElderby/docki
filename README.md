@@ -93,6 +93,7 @@ docki/
 - [Docki Explorer](docs/explorer.md)
 - [Contributing](docs/contributing.md)
 - [Publishing to GitHub / npm](docs/publishing.md)
+- [Spec Kit artifacts (Explorer design)](specs/README.md)
 
 ## Safety
 
