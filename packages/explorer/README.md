@@ -2,7 +2,7 @@
 
 VS Code / Cursor extension for browsing a repository `/knowledge` tree produced by Docki.
 
-See the product docs: [`../../docs/explorer.md`](../../docs/explorer.md).
+Full product docs: https://github.com/MahmoudElderby/docki/blob/main/docs/explorer.md
 
 ## Quick start
 

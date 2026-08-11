@@ -5,6 +5,11 @@
   "version": "0.2.1",
   "publisher": "docki",
   "categories": ["Other"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MahmoudElderby/docki.git"
+  },
+  "homepage": "https://github.com/MahmoudElderby/docki#readme",
   "engines": {
     "vscode": "^1.85.0"
   },
