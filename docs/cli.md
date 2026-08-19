@@ -1,6 +1,6 @@
 # CLI reference
 
-Entry point: `docki` (via `npx docki` or `node packages/cli/bin/docki.js`).
+Entry point: `docki` (via `npx docki-cli` or `node packages/cli/bin/docki.js`).
 
 ## `docki init`
 

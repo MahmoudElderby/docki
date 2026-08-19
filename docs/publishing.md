@@ -30,7 +30,9 @@ Replace the owner only if you fork:
 - `package.json` → `repository` / `bugs` / `homepage`
 - `docs/contributing.md` clone URL
 
-## 2. Publish the npm package (optional but recommended for `npx docki`)
+## 2. Publish the npm package (optional but recommended for `npx docki-cli`)
+
+The npm package name is **`docki-cli`** (not `docki`). The unscoped name `docki` is blocked by the npm registry (too similar to existing packages). The installed command remains **`docki`**.
 
 ```bash
 npm login
@@ -56,7 +58,7 @@ npm run package
 Attach `docki-explorer-*.vsix` to a GitHub Release, and document:
 
 ```bash
-npx docki install-explorer
+npx docki-cli install-explorer
 ```
 
 Optional later: publish to the VS Code Marketplace / Open VSX under publisher `docki`.

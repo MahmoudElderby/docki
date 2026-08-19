@@ -1,5 +1,5 @@
 {
-  "name": "docki",
+  "name": "docki-cli",
   "version": "0.1.0",
   "description": "Docki — architecture knowledge for Cursor and VS Code. Analyze any repo into a persistent /knowledge base, then explore it.",
   "license": "MIT",

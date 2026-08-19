@@ -16,7 +16,7 @@ VS Code / Cursor extension that browses a repository's `/knowledge` folder.
 From a Docki checkout:
 
 ```bash
-npx docki install-explorer
+npx docki-cli install-explorer
 ```
 
 Or manually:

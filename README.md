@@ -5,7 +5,7 @@
 Docki analyzes a repository, writes a persistent evidence-based knowledge base under `/knowledge`, and ships an Explorer so your team can browse, search, and follow evidence links — including Mermaid diagrams.
 
 ```text
-npx docki init
+npx docki-cli init
 # then in Cursor:  docki-knowledge
 ```
 
@@ -31,7 +31,7 @@ npx docki init
 From the repository you want to document:
 
 ```bash
-npx docki init
+npx docki-cli init
 ```
 
 Or from a local Docki checkout:
@@ -54,7 +54,7 @@ docki install-explorer          # build .vsix and install into Cursor/VS Code
 
 1. Open the repo in **Cursor**
 2. Invoke the skill **`docki-knowledge`** (no custom prompt required)
-3. Optionally install the Explorer: `npx docki install-explorer`
+3. Optionally install the Explorer: `npx docki-cli install-explorer`
 4. After meaningful code changes, invoke **`docki-update`**
 
 ## Knowledge classifications

@@ -16,5 +16,5 @@ cursor --install-extension docki-explorer-*.vsix
 Or from the Docki root:
 
 ```bash
-npx docki install-explorer
+npx docki-cli install-explorer
 ```

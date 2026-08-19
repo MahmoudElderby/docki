@@ -4,7 +4,7 @@
 
 ```bash
 cd your-repo
-npx docki init
+npx docki-cli init
 ```
 
 This copies:
@@ -19,7 +19,7 @@ This copies:
 Verify:
 
 ```bash
-npx docki doctor
+npx docki-cli doctor
 ```
 
 ## 2. Generate knowledge
@@ -39,7 +39,7 @@ First run on a large monorepo can take a while. Prefer a strong model for the pa
 From a Docki checkout (or after publishing):
 
 ```bash
-npx docki install-explorer
+npx docki-cli install-explorer
 ```
 
 Then in Cursor/VS Code:

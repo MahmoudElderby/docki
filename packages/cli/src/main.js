@@ -31,10 +31,10 @@ Options for install-explorer:
   --vsix <path>        Install a specific .vsix file
 
 Examples:
-  npx docki init
-  npx docki init --target ./my-service --force
-  npx docki doctor
-  npx docki install-explorer
+  npx docki-cli init
+  npx docki-cli init --target ./my-service --force
+  npx docki-cli doctor
+  npx docki-cli install-explorer
 `.trim();
 
 function parseArgs(argv) {
